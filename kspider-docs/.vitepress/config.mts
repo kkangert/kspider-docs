@@ -37,6 +37,10 @@ export default defineConfig({
                     text: '部署',
                     link: '/BasicCourse/install.md'
                   },
+                  {
+                    text: '快速开始',
+                    link: '/BasicCourse/quickstart.md'
+                  }
                 ]
             },
             {
