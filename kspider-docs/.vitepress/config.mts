@@ -10,13 +10,22 @@ export default defineConfig({
         search: {
             provider: 'local'
         },
+        editLink: {
+          text: '在 GitHub 上编辑此页面',
+          pattern: 'https://github.com/kkangert/kspider-docs/edit/main/kspider-docs/:path'
+        },
         // https://vitepress.dev/reference/default-theme-config
         nav: [{ text: '首页', link: '/' }],
 
         sidebar: [
             {
                 text: '快速开始',
-                items: []
+                items: [
+                  {
+                    text: '介绍',
+                    link: '/BasicCourse/intro.md'
+                  },
+                ]
             },
             {
                 text: '函数扩展',

@@ -9,7 +9,7 @@ hero:
   actions:
     - theme: brand
       text: 快速开始
-      link: /
+      link: /BasicCourse/intro.md
     - theme: alt
       text: demo
       link: /
