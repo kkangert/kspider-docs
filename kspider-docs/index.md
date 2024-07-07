@@ -3,7 +3,7 @@
 layout: home
 
 hero:
-  name: "Kspider-在线可视化爬虫工具"
+  name: "Kspider"
   text: "在线可视化爬虫工具"
   tagline: 无需编写后端代码的爬虫平台，可自定义函数、复杂脚本、定时任务
   actions:
