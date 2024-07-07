@@ -23,7 +23,6 @@ jobs:
       - name: Upload
         uses: actions/upload-pages-artifact@v3.0.1
         with:
-          name: kspider-docs
           path: kspider-docs/.vitepress/dist
           retention-days: 1
 
@@ -31,7 +30,6 @@ jobs:
         uses: actions/deploy-pages@v4.0.5
         with:
           token: ${{ github.token }}
-          artifact_name: kspider-docs
           preview: true
           timeout: 600000
           error_count: 10
