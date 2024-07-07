@@ -14,6 +14,13 @@ export default defineConfig({
           text: '在 GitHub 上编辑此页面',
           pattern: 'https://github.com/kkangert/kspider-docs/edit/main/kspider-docs/:path'
         },
+        lastUpdated: {
+          text: '最后更新于',
+          formatOptions: {
+            dateStyle: 'short',
+            timeStyle: 'medium'
+          }
+        },
         // https://vitepress.dev/reference/default-theme-config
         nav: [{ text: '首页', link: '/' }],
 
