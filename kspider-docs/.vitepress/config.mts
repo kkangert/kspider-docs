@@ -44,6 +44,10 @@ export default defineConfig({
                   {
                     text: '表达式语法',
                     link: '/BasicCourse/expression.md'
+                  },
+                  {
+                    text: '内置变量',
+                    link: '/BasicCourse/variable.md'
                   }
                 ]
             },
