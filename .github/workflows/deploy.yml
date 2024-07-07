@@ -1,0 +1,39 @@
+name: Deploy
+on:
+  push:
+    branches:
+      - main
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+          id-token: write
+          pages: write
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v3
+        with:
+          node-version: latest
+      - run: npm i pnpm -g
+      - run: pnpm install --frozen-lockfile
+
+      - name: Build
+        run: pnpm docs:build
+
+      - name: Upload
+        uses: actions/upload-pages-artifact@v3.0.1
+        with:
+          name: kspider-docs
+          path: kspider-docs/.vitepress/dist
+          retention-days: 1
+
+      - name: Deploy
+        uses: actions/deploy-pages@v4.0.5
+        with:
+          token: ${{ github.token }}
+          artifact_name: kspider-docs
+          preview: true
+          timeout: 600000
+          error_count: 10
+          reporting_interval: 5000
+
