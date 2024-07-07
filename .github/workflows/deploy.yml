@@ -11,14 +11,14 @@ jobs:
           pages: write
     steps:
       - uses: actions/checkout@v4.1.7
+      - name: Setup Pages
+        uses: actions/configure-pages@v5.0.0
       - uses: actions/setup-node@v4.0.2
         with:
           node-version: latest
-      - run: npm i pnpm -g
-      - run: pnpm install --frozen-lockfile
 
       - name: Build
-        run: pnpm docs:build
+        run: npm i pnpm -g && pnpm install --frozen-lockfile && pnpm docs:build
 
       - name: Upload
         uses: actions/upload-pages-artifact@v3.0.1
@@ -27,6 +27,7 @@ jobs:
           retention-days: 1
 
       - name: Deploy
+        id: deployment
         uses: actions/deploy-pages@v4.0.5
         with:
           token: ${{ github.token }}
