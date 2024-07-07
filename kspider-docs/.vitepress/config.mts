@@ -5,7 +5,7 @@ export default defineConfig({
     title: 'Kspider',
     description: '在线可视化爬虫工具',
     lastUpdated: true,
-    base: '/kspider-docs',
+    base: '/',
     themeConfig: {
         search: {
             provider: 'local'
