@@ -40,6 +40,10 @@ export default defineConfig({
                   {
                     text: '快速开始',
                     link: '/BasicCourse/quickstart.md'
+                  },
+                  {
+                    text: '表达式语法',
+                    link: '/BasicCourse/expression.md'
                   }
                 ]
             },
