@@ -6,6 +6,7 @@ export default defineConfig({
     description: '在线可视化爬虫工具',
     lastUpdated: true,
     base: '/',
+    lang: 'zh-CN',
     themeConfig: {
         search: {
             provider: 'local'
@@ -31,6 +32,10 @@ export default defineConfig({
                   {
                     text: '介绍',
                     link: '/BasicCourse/intro.md'
+                  },
+                  {
+                    text: '部署',
+                    link: '/BasicCourse/install.md'
                   },
                 ]
             },
