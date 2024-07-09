@@ -12,15 +12,15 @@ export default defineConfig({
             provider: 'local'
         },
         editLink: {
-          text: '编辑此页',
-          pattern: 'https://github.com/kkangert/kspider-docs/edit/main/kspider-docs/:path'
+            text: '编辑此页',
+            pattern: 'https://github.com/kkangert/kspider-docs/edit/main/kspider-docs/:path'
         },
         lastUpdated: {
-          text: '更新时间',
-          formatOptions: {
-            dateStyle: 'short',
-            timeStyle: 'medium'
-          }
+            text: '更新时间',
+            formatOptions: {
+                dateStyle: 'short',
+                timeStyle: 'medium'
+            }
         },
         // https://vitepress.dev/reference/default-theme-config
         nav: [{ text: '首页', link: '/' }],
@@ -29,26 +29,26 @@ export default defineConfig({
             {
                 text: '快速开始',
                 items: [
-                  {
-                    text: '介绍',
-                    link: '/BasicCourse/intro.md'
-                  },
-                  {
-                    text: '部署',
-                    link: '/BasicCourse/install.md'
-                  },
-                  {
-                    text: '快速开始',
-                    link: '/BasicCourse/quickstart.md'
-                  },
-                  {
-                    text: '表达式语法',
-                    link: '/BasicCourse/expression.md'
-                  },
-                  {
-                    text: '内置变量',
-                    link: '/BasicCourse/variable.md'
-                  }
+                    {
+                        text: '介绍',
+                        link: '/BasicCourse/intro.md'
+                    },
+                    {
+                        text: '部署',
+                        link: '/BasicCourse/install.md'
+                    },
+                    {
+                        text: '快速开始',
+                        link: '/BasicCourse/quickstart.md'
+                    },
+                    {
+                        text: '表达式语法',
+                        link: '/BasicCourse/expression.md'
+                    },
+                    {
+                        text: '内置变量',
+                        link: '/BasicCourse/variable.md'
+                    }
                 ]
             },
             {
@@ -64,13 +64,13 @@ export default defineConfig({
                 items: []
             },
             {
-              text: '常见问题',
-              items: []
+                text: '实战案例',
+                items: []
             },
             {
-              text: '实战案例',
-              items: []
-            }
+              text: '常见问题',
+              link: '/Faq/faq.md'
+          },
         ],
 
         socialLinks: [{ icon: 'github', link: 'https://github.com/kkangert/kspider' }],
