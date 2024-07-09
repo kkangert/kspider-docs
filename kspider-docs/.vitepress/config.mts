@@ -12,11 +12,11 @@ export default defineConfig({
             provider: 'local'
         },
         editLink: {
-          text: '在 GitHub 上编辑此页面',
+          text: '编辑此页',
           pattern: 'https://github.com/kkangert/kspider-docs/edit/main/kspider-docs/:path'
         },
         lastUpdated: {
-          text: '最后更新于',
+          text: '更新时间',
           formatOptions: {
             dateStyle: 'short',
             timeStyle: 'medium'
@@ -62,6 +62,14 @@ export default defineConfig({
             {
                 text: '插件扩展',
                 items: []
+            },
+            {
+              text: '常见问题',
+              items: []
+            },
+            {
+              text: '实战案例',
+              items: []
             }
         ],
 
