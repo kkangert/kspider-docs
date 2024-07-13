@@ -23,6 +23,7 @@ Maven >= 3.0 下载地址：(http://maven.apache.org/download.cgi)
 <dependency>
 	<groupId>top.kangert.kspider</groupId>
 	<artifactId>kspider-selenium</artifactId>
+	<version>0.0.1</version>
 </dependency>
 ```
 
