@@ -9,7 +9,7 @@
 
 # 自定义类型
 
-自定义类型，需要遵循顶级接口[SpiderResponse](https://github.com/kkangert/kspider/blob/main/kspider-api/src/main/java/top/kangert/kspider/executor/FunctionExtension.java)的约束
+自定义类型，需要遵循顶级接口[FunctionExtension](https://github.com/kkangert/kspider/blob/main/kspider-api/src/main/java/top/kangert/kspider/executor/FunctionExtension.java)的约束
 
 ```java
 package top.kangert.kspider.executor;
