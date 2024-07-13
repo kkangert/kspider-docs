@@ -53,7 +53,48 @@ export default defineConfig({
             },
             {
                 text: '函数扩展',
-                items: []
+                items: [
+                    {
+                        text: '介绍',
+                        link: '/FunctionExtension/intro.md'
+                    },
+                    {
+                        text: '抽取函数',
+                        link: '/FunctionExtension/extra.md'
+                    },
+                    {
+                        text: 'base64',
+                        link: '/FunctionExtension/base64.md'
+                    },
+                    {
+                        text: 'date',
+                        link: '/FunctionExtension/date.md'
+                    },
+                    {
+                        text: 'file',
+                        link: '/FunctionExtension/file.md'
+                    },
+                    {
+                        text: 'json',
+                        link: '/FunctionExtension/json.md'
+                    },
+                    {
+                        text: 'list',
+                        link: '/FunctionExtension/list.md'
+                    },
+                    {
+                        text: 'random',
+                        link: '/FunctionExtension/random.md'
+                    },
+                    {
+                        text: 'string',
+                        link: '/FunctionExtension/string.md'
+                    },
+                    {
+                        text: 'url',
+                        link: '/FunctionExtension/url.md'
+                    }
+                ]
             },
             {
                 text: '类型扩展',
