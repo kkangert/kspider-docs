@@ -28,6 +28,7 @@ export default defineConfig({
         sidebar: [
             {
                 text: '快速开始',
+                collapsed: true,
                 items: [
                     {
                         text: '介绍',
@@ -53,6 +54,7 @@ export default defineConfig({
             },
             {
                 text: '函数扩展',
+                collapsed: true,
                 items: [
                     {
                         text: '介绍',
@@ -98,14 +100,22 @@ export default defineConfig({
             },
             {
                 text: '类型扩展',
-                items: []
+                collapsed: true,
+                items: [
+                    {
+                        text: '介绍',
+                        link: '/TypeExtension/intro.md'
+                    }
+                ]
             },
             {
                 text: '插件扩展',
+                collapsed: true,
                 items: []
             },
             {
                 text: '实战案例',
+                collapsed: true,
                 items: []
             },
             {
