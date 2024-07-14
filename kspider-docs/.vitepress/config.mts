@@ -7,6 +7,21 @@ export default defineConfig({
     lastUpdated: true,
     base: '/',
     lang: 'zh-CN',
+    head: [
+        [
+            'script',
+            {},
+            `
+                var _hmt = _hmt || [];
+                (function() {
+                var hm = document.createElement("script");
+                hm.src = "https://hm.baidu.com/hm.js?5632192256b15c78a015f4f21ec9bc9b";
+                var s = document.getElementsByTagName("script")[0]; 
+                s.parentNode.insertBefore(hm, s);
+                })();
+            `
+        ]
+    ],
     themeConfig: {
         search: {
             provider: 'local'
@@ -156,9 +171,9 @@ export default defineConfig({
                 items: []
             },
             {
-              text: '常见问题',
-              link: '/Faq/faq.md'
-          },
+                text: '常见问题',
+                link: '/Faq/faq.md'
+            }
         ],
 
         socialLinks: [{ icon: 'github', link: 'https://github.com/kkangert/kspider' }],
