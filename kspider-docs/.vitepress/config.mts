@@ -105,6 +105,38 @@ export default defineConfig({
                     {
                         text: '介绍',
                         link: '/TypeExtension/intro.md'
+                    },
+                    {
+                        text: 'SpiderResponse',
+                        link: '/TypeExtension/spiderResponse.md'
+                    },
+                    {
+                        text: 'String',
+                        link: '/TypeExtension/string.md'
+                    },
+                    {
+                        text: 'Date',
+                        link: '/TypeExtension/date.md'
+                    },
+                    {
+                        text: 'Object',
+                        link: '/TypeExtension/object.md'
+                    },
+                    {
+                        text: 'List',
+                        link: '/TypeExtension/list.md'
+                    },
+                    {
+                        text: 'Map',
+                        link: '/TypeExtension/map.md'
+                    },
+                    {
+                        text: 'Element',
+                        link: '/TypeExtension/element.md'
+                    },
+                    {
+                        text: 'Elements',
+                        link: '/TypeExtension/elements.md'
                     }
                 ]
             },
