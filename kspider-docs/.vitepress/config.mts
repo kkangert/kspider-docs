@@ -143,7 +143,12 @@ export default defineConfig({
             {
                 text: '插件扩展',
                 collapsed: true,
-                items: []
+                items: [
+                    {
+                        text: '介绍',
+                        link: '/PluggableExtension/intro.md'
+                    }
+                ]
             },
             {
                 text: '实战案例',
