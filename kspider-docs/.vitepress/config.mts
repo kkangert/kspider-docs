@@ -12,7 +12,7 @@ export default defineConfig({
             'script',
             {},
             `
-                var _hmt = _hmt || [];
+                window._hmt = window._hmt || [];
                 (function() {
                 var hm = document.createElement("script");
                 hm.src = "https://hm.baidu.com/hm.js?5632192256b15c78a015f4f21ec9bc9b";
