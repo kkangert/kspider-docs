@@ -11,8 +11,11 @@ hero:
           text: 快速开始
           link: /BasicCourse/intro.md
         - theme: alt
-          text: demo
-          link: /
+          text: 实战案例
+          link: /Examples/intro.md
+        - theme: alt
+          text: 源码
+          link: https://github.com/kkangert/kspider
 
 features:
     - title: 无需编写后端代码
