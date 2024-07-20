@@ -166,6 +166,21 @@ export default defineConfig({
                 ]
             },
             {
+                text: '流程管理',
+                collapsed: true,
+                items: []
+            },
+            {
+                text: '任务管理',
+                collapsed: true,
+                items: []
+            },
+            {
+                text: '函数管理',
+                collapsed: true,
+                items: []
+            },
+            {
                 text: '实战案例',
                 collapsed: true,
                 items: [
