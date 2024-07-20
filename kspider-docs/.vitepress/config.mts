@@ -181,6 +181,11 @@ export default defineConfig({
                 items: []
             },
             {
+                text: '数据源管理',
+                collapsed: true,
+                items: []
+            },
+            {
                 text: '实战案例',
                 collapsed: true,
                 items: [
