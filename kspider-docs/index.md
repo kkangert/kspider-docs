@@ -15,8 +15,8 @@ hero:
           link: /
 
 features:
-    - title: 无需编写代码
-      details: 在线定制爬虫规则
+    - title: 无需编写后端代码
+      details: 在线定制爬虫\WEB自动化测试规则
     - title: 插件丰富
       details: selenium等插件
     - title: 高度灵活
