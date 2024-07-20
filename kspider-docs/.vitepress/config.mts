@@ -168,7 +168,16 @@ export default defineConfig({
             {
                 text: '实战案例',
                 collapsed: true,
-                items: []
+                items: [
+                    {
+                        text: '介绍',
+                        link: '/Examples/intro.md'
+                    },
+                    {
+                        text: '豆瓣热映电影',
+                        link: '/Examples/DoubanMovie.md'
+                    }
+                ]
             },
             {
                 text: '常见问题',
