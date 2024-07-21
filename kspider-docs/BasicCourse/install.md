@@ -46,6 +46,10 @@ docker-compose -f deploy/kspider.yml up -d
 -   进入 kspider 数据库，向 kspider_user 表插入数据
 -   执行 sql 脚本
 ```sql
+-- 使用kspider数据库
+use kspider;
+
+-- 创建kspider用户
 INSERT INTO kspider_user(username, password) VALUES('kangert', '111111');
 ```
 
