@@ -45,6 +45,7 @@ docker-compose -f deploy/kspider.yml up -d
 -   连接 Mysql 数据库，数据库账号密码参照[部署文件](https://github.com/kkangert/kspider/blob/main/deploy/kspider.yml)
 -   进入 kspider 数据库，向 kspider_user 表插入数据
 -   执行 sql 脚本
+
 ```sql
 -- 使用kspider数据库
 use kspider;
@@ -56,3 +57,9 @@ INSERT INTO kspider_user(username, password) VALUES('kangert', '111111');
 ### 4.访问 Kspider
 
 [点击访问](http://127.0.0.1:80)
+
+## 更新项目
+
+```shell
+docker-compose -f deploy/kspider.yml pull
+```
