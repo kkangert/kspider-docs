@@ -25,3 +25,31 @@ features:
     - title: 高度灵活
       details: 扩展方便，规则定制灵活
 ---
+
+---
+<script setup>
+import { VPTeamMembers } from 'vitepress/theme'
+
+const members = [
+  {
+    avatar: 'https://avatars.githubusercontent.com/u/61531911?v=4',
+    name: 'kangert',
+    title: 'Kspider作者',
+    links: [
+      { icon: 'github', link: 'https://github.com/kkangert' }
+    ]
+  },
+  {
+    avatar: 'https://avatars.githubusercontent.com/u/76479169?v=4',
+    name: 'zhaozhaonihao',
+    title: '开发者',
+    links: [
+      { icon: 'github', link: 'https://github.com/zhaozhaonihao' }
+    ]
+  }
+]
+</script>
+
+
+# 团队介绍
+<VPTeamMembers size="small" :members="members" />

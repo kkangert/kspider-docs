@@ -168,12 +168,22 @@ export default defineConfig({
             {
                 text: '流程管理',
                 collapsed: true,
-                items: []
+                items: [
+                    {
+                        text: '介绍',
+                        link: '/FlowManage/intro.md'
+                    }
+                ]
             },
             {
                 text: '任务管理',
                 collapsed: true,
-                items: []
+                items: [
+                    {
+                        text: '介绍',
+                        link: '/TaskManage/intro.md'
+                    }
+                ]
             },
             {
                 text: '函数管理',
