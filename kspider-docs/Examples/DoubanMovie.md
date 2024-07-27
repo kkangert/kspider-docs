@@ -7,7 +7,7 @@
 
 # 流程源码
 ***注意：selenium节点中需要配置远程驱动地址***
-```
+```json
 {
 	"nodeList": [
 		{
@@ -118,7 +118,7 @@
 					"dataType": "INT",
 					"propName": "pageLoadTimeout",
 					"placeholder": "请输入页面加载超时时间",
-					"value": "100000",
+					"value": 100000,
 					"attributes": null,
 					"childrenItem": null,
 					"required": false
@@ -318,8 +318,8 @@
 		},
 		{
 			"nodeId": "i2kxpmoyyhaohjmrryci",
-			"left": "359px",
-			"top": "282px",
+			"left": "278px",
+			"top": "283px",
 			"class": "workflow-center-clone",
 			"name": "variable",
 			"label": "变量",
@@ -333,7 +333,7 @@
 					"value": [
 						{
 							"remark": "获取当前li标签Id",
-							"value": "${elementLi[loopIndex].getAttribute('id')}",
+							"value": "${resp.xpaths('/html/body/div[3]/div[1]/div/div[1]/div[3]/div[2]/ul/li')[loopIndex].getAttribute('id')}",
 							"key": "getLi"
 						},
 						{
@@ -362,13 +362,14 @@
 							"key": "comments"
 						},
 						{
-							"remark": "后退",
+							"remark": "",
 							"value": "${douban(comments,resp)}",
 							"key": "comments"
 						},
 						{
-							"value": "${resp.getDriver().navigate().back()}",
-							"key": "back"
+							"value": "${resp.toUrl(\"https://movie.douban.com/cinema/nowplaying\")}",
+							"key": "back",
+							"remark": "后退"
 						}
 					],
 					"attributes": null,
@@ -428,7 +429,7 @@
 ## 自定义函数 
 **注意：上述流程源码中，定义自定义函数名称：douban，函数参数：elements,resp**
 
-```
+```JavaScript
 var ArrayList = Java.type('java.util.ArrayList'); 
 var By = Java.type('org.openqa.selenium.By');
 var arrayList = new ArrayList();
